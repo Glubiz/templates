@@ -1,0 +1,23 @@
+.footer {
+	position: relative;
+
+	&__logo-box {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		z-index: 100;
+	}
+
+	&__logo {
+		height: 10rem;
+	}
+
+	&__cvr {
+		position: absolute;
+		bottom: 2rem;
+		right: 2rem;
+		transform: translate(-50%, -50%);
+		letter-spacing: .3rem;
+	}
+}

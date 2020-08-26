@@ -1,0 +1,50 @@
+.header {
+	height: 30vh;
+	background-image: linear-gradient(to right bottom, rgba($color-primary, 0.8), rgba($color-secondary, 0.8));
+	background-size: cover;
+	background-position: top;
+	position: relative;
+
+	&__logo-box {
+		position: absolute;
+		top: 4rem;
+		left: 4rem;
+
+		@include respond(tab-land) {
+			top: 3.5rem;
+			left: 3.5rem;
+		}
+
+		@include respond(tab-up) {
+			top: 3rem;
+			left: 3rem;
+		}
+
+		@include respond(big) {
+			top: 5rem;
+			left: 5rem;
+		}
+	}
+
+	&__logo {
+		height: 10rem;
+	}
+
+	&__text-box {
+		position: absolute;
+		top: 40%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		text-align: center;
+	}
+
+	@include respond(phone) {
+		height: 25vh !important;
+		clip-path: (0 0, 100% 0, 100% 20vh, 0 100%);
+	}
+
+	@include respond(phone-small) {
+		height: 20vh !important;
+		clip-path: polygon(0 0, 100% 0, 100% 15vh, 0 100%);
+	}
+}
